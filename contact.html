@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — RealAutomation</title>
+<meta name="description" content="Book a free 20-minute call about your business. Custom apps for hospitality and service businesses in London and Bermuda.">
+<link rel="canonical" href="https://www.realautomationai.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — RealAutomation">
+<meta property="og:description" content="Book a free 20-minute call. Tell us what's eating your week.">
+<meta property="og:url" content="https://www.realautomationai.com/contact.html">
+<meta property="og:image" content="https://www.realautomationai.com/assets/img/og.png">
+<meta name="theme-color" content="#11161C">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="9" fill="#11161C"/>
+        <path d="M9 22V10h6.2a3.8 3.8 0 0 1 0 7.6H12" stroke="#C25A2E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M15.4 17.6 22 22.5" stroke="#F3A77C" stroke-width="2.1" stroke-linecap="round"/>
+        <circle cx="22.4" cy="10.4" r="2" fill="#F3A77C"/>
+      </svg>
+      <span><b>Real</b><i>Automation</i></span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="what-we-build.html">What we build</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="is-active" href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn--primary btn--sm" href="#form">Start here</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom:clamp(50px,7vw,76px);">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h1>Tell me what's eating your week.</h1>
+      <p class="lede">Twenty minutes, no pitch deck, no obligation. You'll get an honest read on whether an app helps — and if it doesn't, I'll say so.</p>
+    </div>
+  </section>
+
+  <section id="form">
+    <div class="wrap">
+      <div class="split split--wide">
+
+        <div class="reveal">
+          <h2 style="font-size:clamp(1.5rem,2.6vw,2rem);">Send a few details</h2>
+          <p class="lede" style="margin-bottom:28px;">The more you tell me here, the more useful the call is. One paragraph is plenty.</p>
+
+          <!-- ========================================================
+               FORM ENDPOINT
+               Replace action="REPLACE_ME" with your form endpoint, e.g.
+               a Formspree URL: https://formspree.io/f/xxxxxxx
+               Until then, the form falls back to opening the visitor's
+               email client (see assets/js/main.js).
+               ======================================================== -->
+          <form class="form" id="enquiry-form" action="REPLACE_ME" method="POST" data-fallback-email="info@realautomationai.com">
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="business">Business name</label>
+                <input id="business" name="business" type="text" autocomplete="organization">
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="phone">Phone <span class="muted" style="font-weight:400;">(optional)</span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="type">Type of business</label>
+                <select id="type" name="business_type">
+                  <option>Restaurant</option>
+                  <option>Pub or bar</option>
+                  <option>Hotel or rooms</option>
+                  <option>Café or coffee shop</option>
+                  <option>Events or catering</option>
+                  <option>Other service business</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="interest">What's the biggest headache?</label>
+                <select id="interest" name="interest">
+                  <option>Staff onboarding and training</option>
+                  <option>Rotas and shift management</option>
+                  <option>Bookings and enquiries</option>
+                  <option>Checklists and compliance</option>
+                  <option>Knowledge, specs and SOPs</option>
+                  <option>Reporting and dashboards</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Tell me a bit about it</label>
+              <textarea id="message" name="message" placeholder="What takes the most time each week? What have you already tried?"></textarea>
+            </div>
+
+            <input class="hp" type="text" name="_company_url" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="btn-row" style="margin-top:4px;">
+              <button class="btn btn--primary" type="submit">Send enquiry</button>
+              <span class="form-note" id="form-status" role="status" aria-live="polite"></span>
+            </div>
+            <p class="form-note">I reply to everything within one working day. Your details stay with me and go nowhere else.</p>
+          </form>
+        </div>
+
+        <aside class="contact-aside reveal">
+          <div class="card" style="padding:30px 28px;">
+            <h3 style="margin-bottom:20px;">Direct</h3>
+            <div class="contact-aside">
+              <div class="contact-item">
+                <b>Email</b>
+                <a href="mailto:info@realautomationai.com">info@realautomationai.com</a>
+              </div>
+              <div class="contact-item">
+                <b>LinkedIn</b>
+                <a href="https://www.linkedin.com/in/mike2881" rel="noopener">linkedin.com/in/mike2881</a>
+              </div>
+              <div class="contact-item">
+                <b>Where we work</b>
+                <span>London, UK &amp; Bermuda</span>
+              </div>
+              <div class="contact-item">
+                <b>Hours</b>
+                <span>We know your mornings are the quiet bit. Calls before service, evenings, or whenever suits.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="padding:30px 28px;">
+            <h3 style="margin-bottom:14px;">What happens next</h3>
+            <ul class="ticks">
+              <li>I read it and reply within one working day.</li>
+              <li>We book twenty minutes at a time that isn't service.</li>
+              <li>You get a written summary of what I'd build and what it would save — yours to keep, whatever you decide.</li>
+              <li>If it's a fit, a fixed price and a date. If it isn't, I'll tell you that too.</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="9" fill="#1A2129"/>
+            <path d="M9 22V10h6.2a3.8 3.8 0 0 1 0 7.6H12" stroke="#C25A2E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15.4 17.6 22 22.5" stroke="#F3A77C" stroke-width="2.1" stroke-linecap="round"/>
+            <circle cx="22.4" cy="10.4" r="2" fill="#F3A77C"/>
+          </svg>
+          <span><b>Real</b><i>Automation</i></span>
+        </a>
+        <p>Custom apps for independent hospitality and service businesses. One place for your information, automation for the rest. London &amp; Bermuda.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="what-we-build.html">What we build</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:info@realautomationai.com">info@realautomationai.com</a></li>
+          <li><a href="https://www.linkedin.com/in/mike2881" rel="noopener">LinkedIn</a></li>
+          <li><a href="contact.html">Book a call</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>&copy; <span data-year>2026</span> RealAutomation. All rights reserved.</span>
+      <span>Built by an operator, for operators.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
