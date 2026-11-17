@@ -265,7 +265,9 @@ section.tight { padding: clamp(48px, 6vw, 72px) 0; }
 .stat span { font-size: .9rem; color: #9AA6B2; line-height: 1.45; display: block; }
 
 /* Video slots */
-.videos { display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr); }
+.videos { display: grid; gap: 24px; grid-template-columns: repeat(3, 1fr); }
+.videos--two { grid-template-columns: repeat(2, 1fr); }
+.videos--one { grid-template-columns: minmax(0, 1fr); max-width: 940px; margin-inline: auto; }
 .video {
   border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line-dark);
   background: var(--ink-2);
